@@ -1,7 +1,7 @@
 import os
 import itertools
 
-from CatalanNumbers.catalanNumbers import catalenNumbersRecursive
+from CatalanNumbers.catalanNumbers import catalanNumbersRecursive
 from CatalanNumbers.factorial import factorial_recursivo
 
 def validateParsing(parenthesisList: list) -> bool:
@@ -118,7 +118,7 @@ def parenthesisParsing(algoritmo):
         if algoritmo == 1:
             combinacionesValidas = greedyParsing(n)
         else:
-            combinacionesValidas = catalenNumbersRecursive(n)
+            combinacionesValidas = catalanNumbersRecursive(n)
         combinacionesTotales = factorial_recursivo(n)
         print(f'''  
                     ---------------------------------------------------------------------            

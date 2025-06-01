@@ -6,7 +6,7 @@ class Operations: # Corregido a PascalCase, aunque no la usaremos en la versión
         self.i = i_val
         self.j = j_val
 
-def catalenNumbersRecursive(n: int) -> int:
+def catalanNumbersRecursive(n: int) -> int:
     if n <= 1:
         return 1
 
@@ -20,8 +20,8 @@ def catalenNumbersRecursive(n: int) -> int:
     for i in range(n):
         # El primer término es C_i
         # El segundo término es C_{n-1-i}
-        term1 = catalenNumbersRecursive(i)
-        term2 = catalenNumbersRecursive(n - 1 - i)
+        term1 = catalanNumbersRecursive(i)
+        term2 = catalanNumbersRecursive(n - 1 - i)
         catalan_number += term1 * term2
 
     # Guardamos el resultado en el memo antes de devolverlo
